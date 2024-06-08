@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Pinpad</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+<body>
+  <div class="dialog">
+    <div>
+
+      <span class="dialog__message">¡El pin no es correcto, te quedan  <span class="dialog__attempts">3</span>  intentos!</span>
+      </div>
+  </div>
+  <div class="main">
+    <div class="bg-modal">
+      <div class="modal">
+        <div class="modal__header">
+          <image class="modal__exit__btn" src="./assets/close.png"  />
+        </div>
+        <div class="modal__body">
+          <span id="modal__title">Bienvenido a Pinpad</span>
+          <div class="modal-message">
+            <p id="modal__content" >Introduce un numero de 6 digitos y dale a guardar.
+              La proxima vez podrás usar tu numero para acceder.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-background">
+      <div class="pinpad-background">
+        <div  class="pinpad">
+          <div class="pinpad__lcd">
+            <input class="pinpad__lcd-input"  />
+            <image class="pinpad__lcd-image" src="./assets/eye.png" alt="eye to show password "/>
+          </div> 
+           <div class="pinpad__buttons" >
+            <button class="pinpad__button" data-number="7" >7</button>
+            <button class="pinpad__button" data-number="8" >8</button>
+            <button class="pinpad__button" data-number="9" >9</button>
+
+            <button class="pinpad__button" data-number="4" >4</button>
+            <button class="pinpad__button" data-number="5" >5</button>
+            <button class="pinpad__button" data-number="6" >6</button>
+
+            <button class="pinpad__button" data-number="1" >1</button>
+            <button class="pinpad__button" data-number="2" >2</button>
+            <button class="pinpad__button" data-number="3" >3</button>
+
+            <button  class="pinpad__button pinpad__button--clear" data-number="C">C</button>
+
+            <button class="pinpad__button" data-number="0">0</button>
+
+            <button  class="pinpad__button pinpad__button--save" >Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src='./main.js'></script>
+</body>
+</html>
